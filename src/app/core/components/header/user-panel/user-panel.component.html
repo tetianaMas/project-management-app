@@ -1,1 +1,11 @@
-<p>user-panel works!</p>
+<div class="user-panel">
+  <button mat-button [matMenuTriggerFor]="aboveMenu">
+    <mat-icon class="user-panel__icon">
+      account_circle
+    </mat-icon>
+  </button>
+  <mat-menu #aboveMenu="matMenu" yPosition="below" color="primary">
+    <button mat-menu-item color="primary">Profile</button>
+    <button mat-menu-item>Logout</button>
+  </mat-menu>
+</div>

@@ -232,11 +232,11 @@ $altTheme: (
 
 // Theme Init
 .theme-dark {
-  @include mat.all-component-colors($theme);
+  @include mat.all-component-themes($theme);
 }
 
 .theme-light {
-  @include mat.all-component-colors($altTheme);
+  @include mat.all-component-themes($altTheme);
 }
 
 // Specific component overrides, pieces that are not in line with the general theming

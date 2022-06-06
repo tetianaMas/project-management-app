@@ -1,3 +1,4 @@
+import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
@@ -8,8 +9,14 @@ import { Component, HostBinding } from '@angular/core';
 export class AppComponent {
   public isDark = true;
 
-  @HostBinding('class')
-  get themeMode() {
-    return this.isDark ? 'theme-dark' : 'theme-light';
+  private currentTheme = this.isDark ? 'theme-dark' : 'theme-light';
+
+  @HostBinding('class') componentCssClass;
+
+  constructor(public overlayContainer: OverlayContainer) {
+    this.overlayContainer
+      .getContainerElement()
+      .classList.add(this.currentTheme);
+    this.componentCssClass = this.currentTheme;
   }
 }
