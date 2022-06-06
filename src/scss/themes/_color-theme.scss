@@ -5,10 +5,6 @@
 */
 
 @use "@angular/material" as mat;
-@import "./app-component.color-theme";
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
 
 // Fonts
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
@@ -236,13 +232,11 @@ $altTheme: (
 
 // Theme Init
 .theme-dark {
-  @include mat.all-component-themes($theme);
-  @include app-root-theme($theme);
+  @include mat.all-component-colors($theme);
 }
 
 .theme-light {
-  @include mat.all-component-themes($altTheme);
-  @include app-root-theme($altTheme);
+  @include mat.all-component-colors($altTheme);
 }
 
 // Specific component overrides, pieces that are not in line with the general theming
