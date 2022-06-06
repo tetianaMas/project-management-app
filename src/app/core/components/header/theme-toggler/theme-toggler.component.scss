@@ -1,0 +1,9 @@
+@import "variables";
+
+.theme-toggler__text {
+  font-size: 1.2rem;
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}

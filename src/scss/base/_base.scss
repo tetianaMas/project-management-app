@@ -1,5 +1,11 @@
+@import "variables";
+
 * {
   box-sizing: border-box;
+}
+
+li {
+  display: inline-block;
 }
 
 body {
@@ -10,4 +16,10 @@ body {
 html,
 body {
   height: 100%;
+}
+
+html {
+  @media screen and (max-width: $mobile) {
+    font-size: 12px;
+  }
 }

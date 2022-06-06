@@ -1,0 +1,12 @@
+@import "variables";
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $secondary;
+  }
+}
