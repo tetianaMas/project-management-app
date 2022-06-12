@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+}
+
+.start-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  &__subtitle {
+    max-width: 75%;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+  }
+}
