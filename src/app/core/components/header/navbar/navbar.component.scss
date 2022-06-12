@@ -1,15 +1,7 @@
-@import "variables";
+@import "mixins";
 
 .list__item {
-  transition: color 0.3s;
-
-  &:hover {
-    color: $secondary;
-  }
-
-  &:active {
-    color: $secondary-dark;
-  }
+  @include link;
 
   &__link {
     font-size: 1.2rem;
