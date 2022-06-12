@@ -1,5 +1,19 @@
-.list__item__link {
-  font-size: 1.2rem;
+@import "variables";
+
+.list__item {
+  transition: color 0.3s;
+
+  &:hover {
+    color: $secondary;
+  }
+
+  &:active {
+    color: $secondary-dark;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+  }
 }
 
 .navbar__list {
