@@ -1,0 +1,14 @@
+@import "variables";
+
+@mixin link {
+  transition: color 0.3s;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $secondary;
+  }
+
+  &:active {
+    color: $secondary-dark;
+  }
+}

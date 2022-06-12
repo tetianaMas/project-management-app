@@ -1,0 +1,21 @@
+@import "variables";
+@import "mixins";
+
+.footer {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: $primary;
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+  }
+
+  &__link {
+    @include link;
+
+    padding: 0;
+  }
+}
